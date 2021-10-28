@@ -114,7 +114,7 @@ namespace GameOfLife
             var summ = 0;
             var i_top = i - 1;
             var i_bottom = i + 1;
-            var i_left = j - 1;
+            var j_left = j - 1;
             var j_right = j + 1;
 
             if (i == 0)
