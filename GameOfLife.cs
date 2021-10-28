@@ -122,11 +122,11 @@ namespace GameOfLife
             else if (i == height - 1)
                 i_bottom = 0;
             if (j == 0)
-                i_left = width - 1;
+                j_left = width - 1;
             else if (j == width - 1)
                 j_right = 0;
 
-            summ = map[i_top, i_left] + map[i_top, j] + map[i_top, j_right] + map[i, i_left] + map[i, j_right] + map[i_bottom, i_left] + map[i_bottom, j] + map[i_bottom, j_right];
+            summ = map[i_top, j_left] + map[i_top, j] + map[i_top, j_right] + map[i, i_left] + map[i, j_right] + map[i_bottom, j_left] + map[i_bottom, j] + map[i_bottom, j_right];
             return summ;
         }
     }
